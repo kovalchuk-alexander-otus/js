@@ -6,7 +6,7 @@
  */
 var sumNext = (function(){
 	var ret = 0;
-	return function(n) { return n == undefined ? ret : ret += n; }
+	return function(n) { return n === undefined ? ret : ret += n; }
 })();
 
 /**
@@ -16,7 +16,7 @@ var sumNext = (function(){
 var sumAll = (function(){
 	var ret = 0;
 	var f = function (n){
-		if (n==undefined){
+		if (n===undefined){
 			return ret;
         }else{
 			ret+=n;
